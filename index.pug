@@ -1,0 +1,280 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Gym Project
+    include includes/styles.pug
+    include includes/fonts.pug
+  body
+    nav(class="navbar navbar-expand-lg fixed-top")
+      div(class="container")
+        a(class="navbar-brand fw-bold", href="#") Gym<span>Fit</span>
+        button(class="navbar-toggler", type="button", data-bs-toggle="collapse", data-bs-target="#main", aria-controls="main")
+          i(class="fa-solid fa-bars")
+        div(class="collapse navbar-collapse justify-content-center", id="main")
+          ul(class="navbar-nav mb-2 mb-lg-0 ms-lg-5 text-center")
+            li(class="nav-item")
+              a(href="#" class="nav-link active text-uppercase", aria-current="page") Home
+            li(class="nav-item dropdown")
+              a(href="#" class="nav-link text-uppercase dropdown-toggle", role="button", data-bs-toggle="dropdown", aria-expanded="false") Pages
+              ul(class="dropdown-menu text-center")
+                li
+                  a(class="dropdown-item text-uppercase", href="#") About
+                li
+                  a(class="dropdown-item text-uppercase", href="#") Trainer
+                li
+                  a(class="dropdown-item text-uppercase", href="#") Courses
+            li(class="nav-item")
+              a(href="#" class="nav-link text-uppercase", aria-current="page") Services
+            li(class="nav-item")
+              a(href="#" class="nav-link text-uppercase", aria-current="page") Membership
+            li(class="nav-item dropdown")
+              a(href="#" class="nav-link text-uppercase dropdown-toggle", role="button", data-bs-toggle="dropdown", aria-expanded="false") Blog
+              ul(class="dropdown-menu text-center")
+                li
+                  a(class="dropdown-item text-uppercase", href="#") Blog Grid
+                li
+                  a(class="dropdown-item text-uppercase", href="#") Blog Sidebar
+                li
+                  a(class="dropdown-item text-uppercase", href="#") Blog Details
+            li(class="nav-item")
+              a(href="#" class="nav-link text-uppercase", aria-current="page") Contact
+        div(class="phone d-lg-flex justify-content-center d-none ms-4")
+          i(class="fa-solid fa-mobile fs-2")
+          h3(class="ms-2 fw-bold") +23-563-5688
+    div(class="main-wrapper")
+      section(class="slider position-relative")
+        div(class="container")
+          div(class="row")
+            div(class="col-md-8 text")
+              span(class="text-uppercase") Gym Fitness Club
+              h1(class="text-uppercase") Step Up Your <span>Fitness Challenge</span> With Us
+              a(href="#" class="main-button text-uppercase") Join Us
+                i(class="fa-solid fa-angle-right ms-3")
+      section(class="boxes")
+        div(class="container")
+          div(class="row")
+            div(class="col-md-6 col-lg-4")
+              div(class="box position-relative")
+                span(class="number") 01
+                h4(class="text-uppercase") Modern Equipment
+                p Vestibulum sit amet blan augue, sit amet vehicula mi. Aliquam vitae varius.
+                a(href="#", class="text-uppercase") - More Details
+            div(class="col-md-6 col-lg-4")
+              div(class="box position-relative")
+                span(class="number") 02
+                h4(class="text-uppercase") Proffesional Trainer
+                p Vestibulum sit amet blan augue, sit amet vehicula mi. Aliquam vitae varius.
+                a(href="#", class="text-uppercase") - More Details
+            div(class="col-md-6 col-lg-4")
+              div(class="box position-relative")
+                span(class="number") 03
+                h4(class="text-uppercase") Healthy Diet Plan
+                p Vestibulum sit amet blan augue, sit amet vehicula mi. Aliquam vitae varius.
+                a(href="#", class="text-uppercase") - More Details
+      section(class="content pt-5 pb-5 mt-5")
+        div(class="container")
+          div(class="row align-items-center")
+            div(class="col-lg-6")
+              div(class="image")
+                img(src="./images/bg/bg-5.jpg", alt="", class="img-fluid")
+            div(class="col-lg-6")
+              div(class="text")
+                h2(class="text-uppercase fw-bold mt-5") We've Skill In Wide <span>Range of Fitness</span> And Other Body Health Facility.
+                p(class="mt-3 mb-5 text-black-50") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in.
+                a(href="", class="main-button") Learn More
+      section(class="content-2 text-center position-relative")
+        div(class="text m-auto")
+          span(class="text-uppercase mb-4 d-block") discover your potential
+          h1(class="text-uppercase") book your early seat to get <span>summer 25%</span> discount
+          a(href="#", class="main-button text-uppercase") join today
+      section(class="services")
+        div(class="main-heading position-relative")
+          h2(class="text-uppercase fw-bold lh-lg m-0") our services
+          p(class="text-black-50") We offer more than 35 group exercis, aerobic classes each week.
+        div(class="container")
+          div(class="row mt-5 pt-5")
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-dumbbell")
+              div(class="text")
+                h4(class="text-uppercase") weight lifting
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-person-biking")
+              div(class="text")
+                h4(class="text-uppercase") cycling
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-clipboard")
+              div(class="text")
+                h4(class="text-uppercase") yoga medidation
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-ghost")
+              div(class="text")
+                h4(class="text-uppercase") building body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-gift")
+              div(class="text")
+                h4(class="text-uppercase") fitness track
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+            div(class="col-md-6 col-lg-4 box text-center")
+              div(class="icon")
+                i(class="fa-solid fa-camera")
+              div(class="text")
+                h4(class="text-uppercase") fitness
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, molestias.
+      section(class="gallery")
+        div(class="main-heading position-relative")
+          h2(class="text-uppercase fw-bold lh-lg m-0") our gallery
+          p(class="text-black-50") We offer more than 35 group exercis, aerobic classes each week.
+        div(class="full-img", id="fullImgBox")
+          img(src="/images/gallery/gallery-01.jpg", alt="", id="fullImg")
+          span(class="close") x
+        div(class="container")
+          div(class="row pt-5")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-01.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-02.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-03.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-04.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-05.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-06.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-07.jpg", alt="")
+            div(class="col-sm-6 col-md-6 col-lg-3 p-0")
+              div(class="image p-2")
+                img(class="img-fluid", src="./images/gallery/gallery-08.jpg", alt="")
+      section(class="testimonials position-relative")
+        div(class="main-heading position-relative")
+          h2(class="text-uppercase fw-bold lh-lg m-0") what people say
+        div(class="container position-relative")
+          div(class="row text-center")
+            div(class="col-12 p-5")
+              div(class="box")
+                span 66
+                h3(class="text-uppercase") a great start to a healthy life
+                p Laboriosam molestias aperiam sit corporis sunt, hic veritatis possimus optio reprehenderit, laudantium excepturi, consequatur. Assumenda hic error veniam exercitationem
+                div
+                  h5 John Donas
+                  span Manager
+            div(class="col-12 p-5")
+              div(class="box")
+                span 66
+                h3(class="text-uppercase") the workout worth attending!
+                p Laboriosam molestias aperiam sit corporis sunt, hic veritatis possimus optio reprehenderit, laudantium excepturi, consequatur. Assumenda hic error veniam exercitationem
+                div
+                  h5 Donas Jack
+                  span Manager
+            div(class="col-12 p-5")
+              div(class="box")
+                span 66
+                h3(class="text-uppercase") very proffesional club and coaches
+                p Laboriosam molestias aperiam sit corporis sunt, hic veritatis possimus optio reprehenderit, laudantium excepturi, consequatur. Assumenda hic error veniam exercitationem
+                div
+                  h5 Mikel Hussy
+                  span Manager
+            div(class="col-12 p-5")
+              div(class="box")
+                span 66
+                h3(class="text-uppercase") shape your body and healthy!
+                p Laboriosam molestias aperiam sit corporis sunt, hic veritatis possimus optio reprehenderit, laudantium excepturi, consequatur. Assumenda hic error veniam exercitationem
+                div
+                  h5 Hiker Jons
+                  span Manager
+      section(class="courses")
+        div(class="main-heading position-relative")
+          h2(class="text-uppercase fw-bold lh-lg m-0") popular courses
+          p(class="text-black-50") We offer more than 35 group exercis, aerobic classes each week.
+        div(class="container")
+          div(class="row pt-5")
+            div(class="col-lg-3 col-md-6")
+              div(class="card mb-sm-4 mb-lg-0")
+                img(class="card-img-top img-fluid", src="./images/gallery/course-1.jpg", alt="Course 1")
+                div(class="card-body")
+                  h5(class="card-title") Build Body
+                  p(class="card-text") Mentor: Jimmy Karter
+            div(class="col-lg-3 col-md-6")
+              div(class="card mb-sm-4 mb-lg-0")
+                img(class="card-img-top img-fluid", src="./images/gallery/course-2.jpg", alt="Course 1")
+                div(class="card-body")
+                  h5(class="card-title") Build Body
+                  p(class="card-text") Mentor: Jimmy Karter
+            div(class="col-lg-3 col-md-6")
+              div(class="card mb-sm-4 mb-lg-0")
+                img(class="card-img-top img-fluid", src="./images/gallery/course-3.jpg", alt="Course 1")
+                div(class="card-body")
+                  h5(class="card-title") Build Body
+                  p(class="card-text") Mentor: Jimmy Karter
+            div(class="col-lg-3 col-md-6")
+              div(class="card mb-sm-4 mb-lg-0")
+                img(class="card-img-top img-fluid", src="./images/gallery/course-2.jpg", alt="Course 1")
+                div(class="card-body")
+                  h5(class="card-title") Build Body
+                  p(class="card-text") Mentor: Jimmy Karter
+          a(href="#", class="main-button") see all our courses
+      footer(class="text-center text-md-start")
+        div(class="container")
+          div(class="row")
+            div(class="col-md-6 col-lg-4 mb-5")
+              h2(class="text-uppercase") gymfit
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo ad quo sunt maiores, sint nostrum omnis eaque cumque dolorum.
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo ad quo sunt maiores, sint nostrum omnis eaque cumque dolorum.
+            div(class="col-md-6 col-lg-3 mb-5")
+              h4(class="text-uppercase") recent posts
+              p(class="link") Claritas est etiam processus dynamicus
+              span(class="d-block") 30 february 2019
+              p(class="link") Claritas est etiam processus dynamicus
+              span(class="d-block") 30 february 2019
+            div(class="col-md-6 col-lg-2 mb-5")
+              h4(class="text-uppercase") quick links
+              ul(class="list-unstyled")
+                li
+                  i(class="fa-solid fa-angles-right me-2")
+                  | About Us
+                li
+                  i(class="fa-solid fa-angles-right me-2")
+                  | Services
+                li
+                  i(class="fa-solid fa-angles-right me-2")
+                  | Membership
+                li
+                  i(class="fa-solid fa-angles-right me-2")
+                  | Courses
+                li
+                  i(class="fa-solid fa-angles-right me-2")
+                  | Contact Us
+            div(class="col-md-6 col-lg-3 mb-5")
+              h4(class="text-uppercase") Home Location
+              p Washington 6036 Richmond hwy., Alexandria, VA USA 22303
+              span(class="d-block") +1 (409) 987-5874
+              span(class="d-block") info@demolink.org
+          div(class="row bg-black p-2 align-items-center")
+            div(class="col-lg-6")
+              p(class="text-white mt-3") Gymfit © 2023 , Made By <span class="name">Mohamed Medhat</span>
+            div(class="col-lg-6 text-md-end text-sm-center")
+              div(class="icons")
+                i(class="fa-brands facebook fa-facebook me-1")
+                i(class="fa-brands github fa-github me-1")
+                i(class="fa-brands twitter fa-twitter")
+
+    include includes/scripts.pug

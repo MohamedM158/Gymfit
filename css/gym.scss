@@ -1,0 +1,441 @@
+$dark_color: #181a23;
+$white_color: #ffffff;
+$orange_color: #f5634b;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.main-button {
+  color: $white_color;
+  background: linear-gradient(90deg, #fe9418 0%, #f5634b 100%);
+  text-decoration: none;
+  padding: 18px 40px;
+  font-size: 16px;
+  transition: 0.3s;
+  svg {
+    transition: 0.3s;
+  }
+  &:hover {
+    background: linear-gradient(90deg, #f5634b 0%, #fe9418 100%);
+    svg {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+  }
+}
+.main-heading {
+  text-align: center;
+  width: fit-content;
+  display: block;
+  margin: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #f5634b;
+    width: 10%;
+    height: 4px;
+    transform: translateX(-50%);
+  }
+}
+.navbar {
+  transition: 0.3s;
+  .navbar-toggler {
+    box-shadow: none;
+    svg {
+     color: $white_color;
+     font-size: 36px;
+   }
+  }
+  .navbar-brand {
+    color: $white_color;
+    font-size: 30px;
+  }
+    span {
+      color: $orange_color;
+    }
+    .navbar-nav .nav-item .nav-link {
+    color: $white_color;
+    }
+    .navbar-nav .nav-item .nav-link.active,
+    .navbar-nav .nav-item .nav-link:hover,
+    .navbar-nav .nav-item .nav-link:focus {
+      color: $orange_color;
+    }
+
+    .nav-item .dropdown-menu {
+      background-color: #1c1c1c;
+      li a {
+        color: #c8c8c8;
+        background-color: #1c1c1c;
+        font-size: 14px;
+        &:hover {
+          color: $orange_color;
+        }
+      }
+    }
+  .phone {
+    color: $orange_color;
+  }
+}
+.slider {
+  padding: 180px 0;
+  background: url(../images/bg/bg-7.jpg) no-repeat 0% 30%;
+  background-size: cover;
+  .text {
+    z-index: 1000;
+    > span {
+      color: $white_color;
+      border: 3px solid $white_color;
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 35px;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+    h1 {
+      color: $white_color;
+      font-weight: 600;
+      font-size: 95px;
+      line-height: 95px;
+      margin-bottom: 40px;
+      span {
+        color: $orange_color;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+}
+@media(max-width: 767px) {
+  .slider {
+    .text {
+      text-align: center;
+      h1 {
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+  }
+}
+
+.boxes {
+  margin-top: -80px;
+  z-index: 1000;
+  position: relative;
+  .box {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+    .number {
+      font-size: 130px;
+      opacity: 0.1;
+      position: absolute;
+      line-height: 120px;
+      top: 10px;
+      display: block;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 22px;
+      margin-top: 22px;
+      z-index: 1000;
+      position: relative;
+      transition: 0.3s;
+    }
+    p {
+      margin-top: 35px;
+      z-index: 1000;
+      position: relative;
+      color: black;
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    a {
+      text-decoration: none;
+      color: $orange_color;
+      font-size: 12px;
+      z-index: 1000;
+      position: relative;
+      transition: 0.3s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, right top, from(#fe9418), to(#f5634b));
+      background: linear-gradient(90deg, #fe9418 0%, #f5634b 100%);
+      transform: translateY(-342px);
+      transition: 0.5s;
+    }
+    &:hover
+      {
+        &::before {
+        transform: translateY(0);
+      }
+      h4, p, a {
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+}
+.content h2 span {
+  color: $orange_color;
+}
+.content-2 {
+  padding: 180px 0;
+  margin-top: 40px;
+  background: url(../images/bg/slide2.jpg) fixed 50% 50% no-repeat;
+  background-size: cover;
+  .text {
+    max-width: 600px;
+    z-index: 1000;
+    position: relative;
+    color: $white_color;
+    font-weight: bold;
+    h1 {
+      margin-bottom: 50px;
+      span {
+        color: $orange_color;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+}
+.services {
+  padding: 180px 0;
+  .box {
+    position: relative;
+    padding: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #fe9418 0%, #f5634b 100%);
+      width: 100%;
+      height: 0px;
+      transition: 0.5s;
+    }
+    &:hover::before {
+      height: 100%;
+    }
+    &:hover {
+      svg, h4, p {
+        color: $white_color;
+      }
+      p {
+        opacity: 1;
+      }
+    }
+  }
+  .text {
+    z-index: 1000;
+    position: relative;
+    h4 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      transition: 0.3s;
+    }
+    p {
+      line-height: 1.8;
+      color: black;
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+  svg {
+    color: $orange_color;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    z-index: 1000;
+    position: relative;
+    transition: 0.3s;
+  }
+}
+.gallery {
+  .full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    img {
+      width: 90%;
+      max-width: 500px;
+    }
+    span {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      color: white;
+      font-size: 40px;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s;
+    }
+    span:hover {
+      color: red;
+    }
+  }
+  .image {
+    transition: 0.5s;
+    cursor: pointer;
+    img {
+      transition: 0.3s;
+    }
+  }
+  .image:hover {
+    transform: scale(0.8) rotate(-15deg);
+    padding: 0;
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+.testimonials {
+  background: url(../images/bg/bg-cta.jpg);
+  background-size: cover;
+  padding: 180px 0;
+  z-index: 1000;
+  color: $white_color;
+  .container {
+    z-index: 1000;
+    .box {
+      > span {
+        color: $orange_color;
+        font-size: 60px;
+        margin-bottom: 20px;
+        display: block;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 800px;
+        margin: auto;
+        color: white;
+        opacity: 0.5;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      div span {
+        color: white;
+        opacity: 0.5;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+}
+.courses {
+  padding: 180px 0;
+  .card {
+    border: none;
+    box-shadow: 0px 0px 7px #cbcbcb;
+    h5 {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    &:hover h5 {
+      color: $orange_color;
+    }
+  }
+  a {
+    margin: 50px auto;
+    display: block;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+footer {
+  background-color: $dark_color;
+  color: $white_color;
+  padding: 90px 0;
+  h2, h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  span {
+    margin-bottom: 20px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  p {
+    line-height: 1.8;
+  }
+  p, li{
+    color: $white_color;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  .link {
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: $orange_color;
+    }
+  }
+  ul li {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: $orange_color;
+    }
+  }
+  .name {
+    color: $orange_color;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 12px;
+  }
+  .facebook, .github, .twitter {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .facebook:hover, .github:hover, .twitter:hover {
+    color: $orange_color;
+  }
+}
